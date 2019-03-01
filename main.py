@@ -1,5 +1,6 @@
-import pie
+import pie,bar
 pie = pie.Pie()
+bar = bar.Bar()
 
 
 def chart_selection_prompt():
@@ -29,6 +30,13 @@ def startup():
         pie.sector_total_value_prompt()  # Prompts user to enter total value of Sectors
         pie.sector_labels_and_value_prompt()  # Prompts user to enter sector names and values
         pie.create_chart()
+    if user_choice == 2:
+        bar.set_chart_title(chart_title)
+        bar.bar_count_prompt()
+        bar.gridline_interval_prompt()
+        bar.label_y_prompt()
+        bar.bar_label_value_prompt()
+        bar.create_chart()
 
 
 
@@ -45,3 +53,14 @@ if __name__ == "__main__":
     #     "Others": 30
     # }
     # pie.create_chart()
+    # bar.chart_title = "​Jacket Sales in Q1 of 2019"
+    # bar.bar_count = 4
+    # bar.gridline_interval = 50
+    # bar.y_label = "Sales"
+    # bar.bars = {
+    #     "Jan" : 380,
+    #     "Feb" : 250,
+    #     "Mar" : 200,
+    #     "Apr" : 50,
+    # }
+    # bar.create_chart()

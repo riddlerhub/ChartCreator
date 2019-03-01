@@ -83,8 +83,7 @@ class Pie:
             legend_text_y += 60
             legend_item_y +=60
 
-
-
+    print("Your chart is completed.")
 
 
 
